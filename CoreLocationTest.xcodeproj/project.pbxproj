@@ -61,14 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				1114834426384EF300445269 /* Model */,
-				1114832726383C4900445269 /* AppDelegate.swift */,
-				1114832926383C4900445269 /* SceneDelegate.swift */,
-				1114832B26383C4900445269 /* CoreLocationController.swift */,
-				1114832D26383C4900445269 /* Main.storyboard */,
-				1114833326383C4E00445269 /* Assets.xcassets */,
-				1114833526383C4E00445269 /* LaunchScreen.storyboard */,
+				114F090D263AF8BB00D3D7EF /* View */,
+				114F090E263AF8D600D3D7EF /* Controller */,
+				114F090F263AF8EB00D3D7EF /* Supporting Files */,
 				1114833826383C4E00445269 /* Info.plist */,
-				1114833026383C4900445269 /* CoreLocationTest.xcdatamodeld */,
 			);
 			path = CoreLocationTest;
 			sourceTree = "<group>";
@@ -79,6 +75,34 @@
 				1114834526384F0500445269 /* LocationAnnotation.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		114F090D263AF8BB00D3D7EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1114833526383C4E00445269 /* LaunchScreen.storyboard */,
+				1114832D26383C4900445269 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		114F090E263AF8D600D3D7EF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1114832B26383C4900445269 /* CoreLocationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		114F090F263AF8EB00D3D7EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1114832726383C4900445269 /* AppDelegate.swift */,
+				1114832926383C4900445269 /* SceneDelegate.swift */,
+				1114833026383C4900445269 /* CoreLocationTest.xcdatamodeld */,
+				1114833326383C4E00445269 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

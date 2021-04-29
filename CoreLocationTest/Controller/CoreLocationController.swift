@@ -21,16 +21,16 @@ class CoreLocationController: UIViewController, CLLocationManagerDelegate, MKMap
         
         locationManager = CLLocationManager()
         locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest //Ne kadar yakın derecede lokasyon istediği
-        locationManager.distanceFilter = 0.0 //Mevcut konumdan ne kadar hareket ettiğinde değişikliği vurgulasın
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest 
+        locationManager.distanceFilter = 0.0
         
         
         
-        //Kullanıcıdan izin istemek
+        //Permission Request
         
         locationManager.requestWhenInUseAuthorization()
         
-        //daha sonra çalıştırıldığında
+        
         if locationManager.authorizationStatus == .authorizedWhenInUse {
             locationManager.startUpdatingLocation()
         }
@@ -69,7 +69,7 @@ class CoreLocationController: UIViewController, CLLocationManagerDelegate, MKMap
     }
     
     
-    //display route
+    //Display route
     func displayRoute(sourceCoordinate: CLLocationCoordinate2D, destinationCoordinate: CLLocationCoordinate2D) {
         
         //Placemarks
@@ -108,7 +108,7 @@ class CoreLocationController: UIViewController, CLLocationManagerDelegate, MKMap
     
     
     
-    //İlk defa izin istendiğinde olacak
+    //First time permission requested
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         if status == .authorizedWhenInUse {
             locationManager.startUpdatingLocation()
